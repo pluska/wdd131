@@ -28,8 +28,7 @@ body{
 }
 
 header {
-    background-color: var(--dark);
-    border-bottom: 3px solid var(--primary-dark);
+border-bottom: 3px solid var(--primary-dark);
     margin: 0;
     padding: 0;
 }
