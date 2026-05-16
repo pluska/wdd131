@@ -5,7 +5,6 @@
     --primary-dark: #285A48;
     --primary: #408A71;
     --primary-light: #B0E4CC;
-    --accent: #D4AF37;
     --shadow: 0 4px 20px rgba(9, 20, 19, 0.15);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -115,7 +114,6 @@ nav a:hover, nav a:focus, nav a.active {
     padding-left: 2rem;
 }
 
-/* Main Content */
 main {
     flex: 1;
     padding: 2rem 1.5rem;
@@ -146,7 +144,6 @@ h1::after {
     border-radius: 2px;
 }
 
-/* Figures / Gallery Grid (Mobile First: 1 column) */
 .res-grid {
     display: grid;
     grid-template-columns: 1fr;
