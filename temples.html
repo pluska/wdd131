@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Temple Album – Andres Pluska</title>
+    <meta name="description" content="WDD 131 – Temple Album project. Andres Pluska, Lima, Peru. A dynamic web gallery showcasing beautiful Latter-day Saint temples.">
+    <meta name="author" content="Andres Pluska">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="site-title">Temple Album</span>
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Album</h1>
+        <div class="res-grid">
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2019/800x500/17-Salt-Lake-Temple-2142888.jpg" alt="Salt Lake Temple" width="400" height="250" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/800x500/payson-utah-temple-celestial-room-1458545.jpg" alt="Payson Utah Temple" width="400" height="250" loading="lazy">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/320x180/anchorage-temple-lds-253274-wallpaper.jpg" alt="Anchorage Alaska Temple" width="400" height="250" loading="lazy">
+                <figcaption>Anchorage Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://newsroom.churchofjesuschrist.org/media/orig/Payson_Temple_Exterior_Day2015_resized.jpg" alt="Lima Peru Temple" width="400" height="250" loading="lazy">
+                <figcaption>Lima Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://newsroom.churchofjesuschrist.org/media/orig/Payson-utah-temple-rendering.jpg" alt="Washington D.C. Temple" width="400" height="250" loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2019/800x500/17-Salt-Lake-Temple-2142888.jpg" alt="Provo City Center Temple" width="400" height="250" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/800x500/payson-utah-temple-celestial-room-1458545.jpg" alt="San Diego California Temple" width="400" height="250" loading="lazy">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/320x180/anchorage-temple-lds-253274-wallpaper.jpg" alt="Mesa Arizona Temple" width="400" height="250" loading="lazy">
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://newsroom.churchofjesuschrist.org/media/orig/Payson_Temple_Exterior_Day2015_resized.jpg" alt="Nauvoo Illinois Temple" width="400" height="250" loading="lazy">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andres Pluska - Lima, Peru.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
