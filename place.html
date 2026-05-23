@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Valley, Peru | A trip to remember</title>
+    <meta name="description"
+        content="A beautiful city in the Andes mountains of Peru with a rich history and culture. Including ruins, cities, and markets.">
+    <meta name="author" content="Andres Pluska">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sacred Valley, Peru</h1>
+    </header>
+    <main>
+        <section id="hero">
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/ollantaytambo.webp">
+                <img src="images/sacred-valley.webp" alt="sacred valley" width="1280" height="683">
+            </picture>
+        </section>
+        <section id="data" class="card">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>1,285,216 sq km</dd>
+                <dt>Population:</dt>
+                <dd>34,352,719</dd>
+                <dt>Capital:</dt>
+                <dd>Lima</dd>
+                <dt>Languages:</dt>
+                <dd>Spanish, Quechua</dd>
+                <dt>Currency:</dt>
+                <dd>Peruvian Sol (PEN)</dd>
+                <dt>Time Zone:</dt>
+                <dd>UTC-5</dd>
+                <dt>Calling Code:</dt>
+                <dd>+51</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.pe</dd>
+            </dl>
+        </section>
+        <section id="weather" class="card">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><span id="temp">8</span> °C</dd>
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+                <dt>Wind:</dt>
+                <dd><span id="wind">10</span> km/h</dd>
+                <dt>Wind Chill:</dt>
+                <dd><span id="wind-chill">N/A</span></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andres Pluska - Lima, Peru.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
