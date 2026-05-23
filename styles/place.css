@@ -4,7 +4,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header, footer {
+header,
+footer {
     background: linear-gradient(135deg, #cb3232, #ffbd00, #138f27, #3d67b2, #6b1698);
     color: #fefefe;
     padding: 1.5rem 0;
@@ -32,26 +33,42 @@ main {
     object-position: center;
 }
 
-/* Card Styling (Mobile / Default) */
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #138f27;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin: 1.5rem auto;
     padding: 1.5rem;
     max-width: 90%;
-    text-align: left;
     box-sizing: border-box;
 }
 
 .card h2 {
-    background-color: #138f27;
-    color: #ffffff;
-    font-size: 1.25rem;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 600;
-    padding: 0.5rem 1rem;
-    margin: 0 0 1rem 0;
-    display: inline-block;
+    color: #138f27;
+}
+
+#weather h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
 }
 
 .card dl {
@@ -77,9 +94,33 @@ main {
 /* Desktop Positioning */
 @media (min-width: 800px) {
     .card {
+        display: block;
+        text-align: left;
         margin: 0;
         max-width: 320px;
         position: absolute;
+    }
+
+    .card h2 {
+        width: 100%;
+        padding: 0 0 0.5rem 0;
+        text-align: left;
+        background: none;
+        border-radius: 0;
+        color: #138f27;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    #weather h2 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .weather-icon {
+        width: 40px;
+        height: 40px;
     }
 
     #data {
