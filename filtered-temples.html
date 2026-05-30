@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Temple Album – Andres Pluska</title>
+    <meta name="description"
+        content="WDD 131 – Temple Album project. Andres Pluska, Lima, Peru. A dynamic web gallery showcasing beautiful Latter-day Saint temples.">
+    <meta name="author" content="Andres Pluska">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="site-title">Temple Album</span>
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Album</h1>
+        <div class="res-grid" id="temples-container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andres Pluska - Lima, Peru.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
