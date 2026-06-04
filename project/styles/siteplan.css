@@ -65,6 +65,21 @@ section {
     border-radius: 5px;
 }
 
+.color-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.color-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+}
+
+.color-accent {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+}
+
 .typography {
     display: flex;
     flex-direction: column;
