@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="author" content="Andres Pluska">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank you for your review!</h1>
+    </header>
+    <main>
+        <div class="review-message" style="text-align: center; margin: 2rem;">
+            <h2>Your review has been successfully submitted.</h2>
+            <p style="font-size: 1.2rem; margin-top: 1rem;">Total reviews completed: <span id="review-count" style="font-weight: bold; color: darkblue;"></span></p>
+            <p style="margin-top: 2rem;"><a href="form.html" style="text-decoration: none; padding: 0.5rem 1rem; background-color: #eee; border-radius: 5px; color: #333;">Submit another review</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andres Pluska - Lima, Peru.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

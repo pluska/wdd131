@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction Survey</title>
+    <meta name="author" content="Andres Pluska">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Satisfaction Survey - Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div class="form-row">
+                <label for="product">Product:</label>
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Select a product</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <fieldset style="border: none; padding: 0; margin: 0;">
+                    <legend style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Overall satisfaction</legend>
+                    <div class="rating-container">
+                        <label><input type="radio" name="rating" id="rating-1" value="1" required> 1</label>
+                        <label><input type="radio" name="rating" id="rating-2" value="2" required> 2</label>
+                        <label><input type="radio" name="rating" id="rating-3" value="3" required> 3</label>
+                        <label><input type="radio" name="rating" id="rating-4" value="4" required> 4</label>
+                        <label><input type="radio" name="rating" id="rating-5" value="5" required> 5</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-row">
+                <label for="date-installation">Date of installation:</label>
+                <input type="date" name="date-installation" id="date-installation" value="2025-01-01" required>
+            </div>
+            <div class="form-row">
+                <fieldset style="border: none; padding: 0; margin: 0;">
+                    <legend style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Which features have you found most useful?</legend>
+                    <div class="features-container">
+                        <div class="feature-group">
+                            <input type="checkbox" name="usefull-features" id="feature-durability" value="Durability">
+                            <label for="feature-durability">Durability</label>
+                        </div>
+                        <div class="feature-group">
+                            <input type="checkbox" name="usefull-features" id="feature-ease" value="Ease of use">
+                            <label for="feature-ease">Ease of use</label>
+                        </div>
+                        <div class="feature-group">
+                            <input type="checkbox" name="usefull-features" id="feature-performance" value="Performance">
+                            <label for="feature-performance">Performance</label>
+                        </div>
+                        <div class="feature-group">
+                            <input type="checkbox" name="usefull-features" id="feature-design" value="Design">
+                            <label for="feature-design">Design</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-comments">
+                <label for="comments">Any comments? (optional)</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="fullname">Full Name </label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+            <div class="form-button">
+                <input type="submit" value="Send Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andres Pluska - Lima, Peru.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
