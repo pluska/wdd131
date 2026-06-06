@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satisfaction Survey</title>
+    <meta name="description"
+        content="Satisfaction survey form for product reviews. Make a review about any of our products and let us know your opinion.">
     <meta name="author" content="Andres Pluska">
 
     <link rel="stylesheet" href="styles/form.css">
@@ -29,14 +31,19 @@
                 </select>
             </div>
             <div class="form-row">
-                <fieldset style="border: none; padding: 0; margin: 0;">
-                    <legend style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Overall satisfaction</legend>
+                <fieldset>
+                    <legend>Overall satisfaction</legend>
                     <div class="rating-container">
-                        <label><input type="radio" name="rating" id="rating-1" value="1" required> 1</label>
-                        <label><input type="radio" name="rating" id="rating-2" value="2" required> 2</label>
-                        <label><input type="radio" name="rating" id="rating-3" value="3" required> 3</label>
-                        <label><input type="radio" name="rating" id="rating-4" value="4" required> 4</label>
-                        <label><input type="radio" name="rating" id="rating-5" value="5" required> 5</label>
+                        <label for="rating-1"><input type="radio" name="rating" id="rating-1" value="1" required>
+                            1</label>
+                        <label for="rating-2"><input type="radio" name="rating" id="rating-2" value="2" required>
+                            2</label>
+                        <label for="rating-3"><input type="radio" name="rating" id="rating-3" value="3" required>
+                            3</label>
+                        <label for="rating-4"><input type="radio" name="rating" id="rating-4" value="4" required>
+                            4</label>
+                        <label for="rating-5"><input type="radio" name="rating" id="rating-5" value="5" required>
+                            5</label>
                     </div>
                 </fieldset>
             </div>
@@ -45,8 +52,8 @@
                 <input type="date" name="date-installation" id="date-installation" value="2025-01-01" required>
             </div>
             <div class="form-row">
-                <fieldset style="border: none; padding: 0; margin: 0;">
-                    <legend style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Which features have you found most useful?</legend>
+                <fieldset>
+                    <legend>Which features have you found most useful?</legend>
                     <div class="features-container">
                         <div class="feature-group">
                             <input type="checkbox" name="usefull-features" id="feature-durability" value="Durability">
