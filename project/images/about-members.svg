@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Chess piece illustration">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#59B292"/>
+      <stop offset="100%" stop-color="#333333"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#g)"/>
+  <text x="200" y="210" font-size="160" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif">♜</text>
+</svg>
