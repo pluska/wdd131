@@ -1,5 +1,6 @@
 :root {
     --color-primary: #59B292;
+    --color-primary-text: #256348;
     --color-secondary: #333333;
     --color-accent: #FFFFFF;
     --color-border: #000000;
@@ -62,7 +63,7 @@ header.site-header {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .nav-toggle {
@@ -103,7 +104,7 @@ nav.main-nav a {
 
 nav.main-nav a:hover,
 nav.main-nav a.active {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 @media (min-width: 700px) {
@@ -262,7 +263,7 @@ main {
 
 .gallery-subtitle {
     text-align: center;
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     font-weight: 600;
     margin-top: -0.5rem;
     margin-bottom: 1rem;
